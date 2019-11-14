@@ -1,0 +1,23 @@
+{
+  "name": "dev-profile-gen",
+  "version": "1.0.0",
+  "description": "Profile Generator for Developers",
+  "main": "index.js",
+  "scripts": {
+    "test": "first line test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjhunter5315/Dev-Profile-Gen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wjhunter5315/Dev-Profile-Gen/issues"
+  },
+  "homepage": "https://github.com/wjhunter5315/Dev-Profile-Gen#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "inquirer": "^7.0.0"
+  }
+}
