@@ -48,7 +48,7 @@ $.ajax({
   method: "GET"
 })
 .then(function(response) {
-  console.logo(response);
+  console.log(response.length);
 })
 
 function getLocation() {
