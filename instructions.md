@@ -6,6 +6,12 @@ Create a command-line application that dynamically generates a PDF profile from 
 node index.js
 ```
 <!-- 33-Stu_Axios === github api use -->
+<!-- Axios: https://www.npmjs.com/package/axios,
+DotEnv: https://www.npmjs.com/package/dotenv,
+Electron: https://www.npmjs.com/package/electron,  
+Electron-html-to: https://www.npmjs.com/package/electron-html-to,
+Inquirer: https://www.npmjs.com/package/inquirer,
+Open: https://www.npmjs.com/package/open -->
 The user will be prompted for a favorite color, which will be used as the background color for cards.
 
 The PDF will be populated with the following:

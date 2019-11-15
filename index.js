@@ -1,4 +1,4 @@
-// const fs = require("fs");
+const fs = require("fs");
 // const axios = require("axios");
 // const inquirer = require("inquirer");
 
@@ -35,20 +35,33 @@ $.ajax({
 })
 .then(function(response) {
   console.log(response);
-  console.log(response.login);
-  console.log(response.followers);
-  console.log(response.following);
-  console.log(response.html_url);
-  console.log(response.public_repos);
+  const userName = response.login;
+  console.log(userName);
+  const userFollowers = response.followers;
+  console.log(userFollowers);
+  const userFollowing = response.following;
+  console.log(userFollowing);
+  const userHome = response.html_url;
+  console.log(userHome);
+  const userRepos = response.public_repos;
+  console.log(userRepos);
   
 })
-
+const starred = [];
 $.ajax({
   url: gitStarredURL,
   method: "GET"
 })
 .then(function(response) {
-  console.log(response.length);
+  console.log(response);
+  const starred = response.length;
+  console.log(starred);
+  
+})
+fs.writeFile("info.txt", starred, function(err) {
+  if (err) {
+    throw err;
+  }
 })
 
 function getLocation() {
@@ -59,4 +72,5 @@ function getLocation() {
     x.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
-getLocation()
+getLocation();
+writeFile();
